@@ -1,0 +1,356 @@
+/* soft reset do css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('https://i.ibb.co/sytrcbW/89deedf590fa5e1620443e035c69e916.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial;
+    background-size: 90vw;
+    font-size: 1em;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  @media(min-width: 200px){
+    body {
+      background-attachment: fixed;
+      background-size: 90vw;
+      font-size: 10px;
+    }
+  }
+  
+  @media(min-width: 353px){
+    body {
+      background-attachment: fixed;
+      background-size: 90vw;
+      font-size: 12px;
+    }
+  }
+  
+  @media(min-width: 400px){
+    body {
+      background-attachment: fixed;
+      background-size: 90vw;
+      font-size: 14px;
+    }
+  }
+  
+  @media(min-width: 600px){
+      body {
+      background-attachment: fixed;
+      background-size: 90vw;
+      font-size: 16px;
+    }
+  }
+  
+  @media(min-width: 800px){
+      body {
+      background-attachment: fixed;
+      background-size: 90vw;
+      font-size: 18px;
+    }
+  }
+  
+  @media(min-width: 1000px){
+      body {
+      background-attachment: fixed;
+      background-size: 90vw;
+      font-size: 20px;
+    }
+  }
+    
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size:0.6em;
+  
+  }
+  .menu {
+    background-color: rgba( 144, 0, 197, 0.8);
+    position: fixed;
+    width: 90vw;
+    top: 0;
+    z-index:1;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+   list-style: none;
+  }
+  
+  .menu a {
+    
+    display: block;
+    padding: 20px 30px;
+    transition: background-color 0.6s, color 0.6s;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-shadow: 0px 0px 5px white;
+  }
+  
+  #myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgba(76, 76, 76, 0.4); 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: rgba(76, 76, 76, 0.8); 
+  }
+  
+  .titulo{
+    text-align:center;
+    text-shadow: 0px 0px 5px white;
+  }
+  .titulo:hover{
+    text-shadow: 0px 0px 5px gold;
+  }
+  
+  .sobre-container{
+    
+    margin-left:5vw;
+    margin-right:5vw;
+    font-family:'Karla', cursive;
+    font-size:1em;
+    font-weight:bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-shadow: 0px 0px 5px white;
+  }
+  
+  .sobre-container h1{
+    padding-left:2vw;
+  }
+  
+  .hard{
+    grid-area: hard;
+  }
+  
+  .soft{
+    grid-area: soft;
+  }
+  
+  .front { 
+    grid-area: front; 
+  }
+  
+  .back { 
+    grid-area: back;
+  }
+  .soft{
+    grid-area: soft;
+  }
+  
+  .soft h4{
+    padding-top:4vw;
+  }
+  
+  .skills {
+    display: grid;
+    grid-template-areas:
+      'hard hard soft'
+      'front back soft'
+      'front back soft'
+      'front back soft'
+      'front back soft'
+      'front back soft';
+    grid-gap: 1px;
+    padding: 1px;
+  }
+  
+  .skills > div {
+    text-align: center;
+    padding: 1px 0;
+    font-size: 0.8em;
+  }
+  
+  .d20-html{
+    width: 9vw;
+    filter: hue-rotate(240deg) brightness(70%) saturate(1.1) contrast(110%);
+  }
+  
+  .d20-css{
+    width: 9vw;
+  }
+  
+  .d20-js{
+    width: 9vw;
+    filter: hue-rotate(300deg) brightness(150%);
+  }
+  
+  .d20-php{
+    width: 9vw;
+    filter: hue-rotate(120deg) brightness(70%);  
+  }
+  
+  .d20-python{
+    width: 9vw;
+    filter: hue-rotate(170deg) brightness(60%) contrast(120%);
+  }
+  
+  .d20-delphi{
+    width: 9vw;
+    filter: hue-rotate(75deg);
+  }
+  
+  .d20-mysql{
+    width: 9vw;
+    filter: hue-rotate(260deg) brightness(75%);
+  }
+  
+  .d20-java{
+    width: 9vw;
+    filter: hue-rotate(320deg) brightness(120%);
+  }
+  
+  .portfolio .grid {
+    display: grid;
+    grid-gap: 5vw;
+    margin:0 5vw;
+  }
+  
+  .portfolio h2{
+    margin:5vw;
+    padding-left:5vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-shadow: 0px 0px 5px gold;
+  }
+  
+  .portfolio h2:hover{
+    text-shadow: 0px 0px 5px whitesmoke;
+  }
+  
+  @media(min-width: 200px){
+   .portfolio .grid {
+      grid-template-columns: 80vw;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+  
+  @media(min-width: 353px){
+   .portfolio .grid {
+      grid-template-columns: repeat(2, 40vw);
+      align-content: center;
+      justify-content: center;
+    }
+  }
+  
+  @media(min-width: 600px){
+     .portfolio .grid {
+      grid-template-columns: repeat(3, 25vw);
+      align-content: center;
+      justify-content: center;
+    }
+  }
+  
+  @media (min-width: 880px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(3, 25vw);
+      align-content: center;
+      justify-content: center;
+    }
+  }
+  
+  .flip-card {
+    height: 180px;
+    perspective: 1000px;
+  }
+  
+  .flip-card:hover .card {
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .card-front, 
+  .card-back {
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .card-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1em;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
+  }
+  
+  .portfolio figure {
+    text-align: center;
+  }
+  
+  .img-portfolio {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 500ms;
+  }
+  
+  .contato{
+    margin-bottom: 20px;
+  }
+  
+  .contato, .icons{
+    text-align:center;
+    margin:0 5vw; 
+  }
+  
+  .contato h2{
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .contato a{
+    color:darkgrey;
+    font-size:4em;
+    font-style:bold;
+  }
+  
+  .contato a:hover{
+    text-decoration:none;
+    text-shadow:whitesmoke 0px 0px 6px;
+  }
+  .contato a:active,
+  .menu a:hover{
+    text-decoration:none;
+   background-color:rgba(31, 0, 122, 0.76); 
+   color:white;
+  }
